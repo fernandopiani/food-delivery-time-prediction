@@ -23,9 +23,6 @@ The baseline business objective here is maximizing the accuracy of our predictio
 
 The complicating factor here is that past experiments at this company have indicated that underpredicting delivery times (i.e. when orders are late relative to the ETA provided in the app) is approximately twice as detrimental to customer satisfaction as overpredicting them (i.e. when orders arrive earlier than the ETA). For a data scientist, this constraint adds several layers of complexity to our workflow beyond just the default minimization of our regression errors. We will explore these in more technical detail beginning with the **Notes on Algorithm Selection** section further down in the modeling stage.
 
-## NOTES:  
-### 1/14/2021: Need to add a few cells where we check/analyze for negative values. Can even handwave it.
-
 ## Exploratory Data Analysis
 
 
