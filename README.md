@@ -795,7 +795,7 @@ corr_matrix['total_delivery_duration_seconds'].sort_values(ascending=False)
 
 ### Feature engineering  
 
-Let's try to create other measures of marketplace health - *available_drivers*, *outstanding_orders_per_dasher* and *outstanding_orders_per_avail_driver* and see how our correlations look afterward.
+Let's try to create other measures of marketplace health - *available_drivers*, *outstanding_orders_per_driver* and *outstanding_orders_per_avail_driver* and see how our correlations look afterward.
 
 
 ```python
@@ -1690,7 +1690,7 @@ As we can see above, even the highest-performing network constructed using our h
 
 This is not completely surprising, given that the power of neural networks is usually demonstrated more clearly when dealing with even larger and more complex datasets. For tabular datasets of the size we have at hand, tree-based methods such as LightGBM and XGBoost still remain extremely competitive. 
 
-Nonetheless, there was still immense business value evaluating in performance with Keras: we were able to perform a head-to-head test between two powerful machine learning algorithms/APIs which allowed us to easily implement our custom asymmetric loss functions for training and evaluation. 
+Nonetheless, there was still immense business value in evaluating performance with Keras: we were able to perform a head-to-head test and select the winner between two powerful machine learning algorithms/APIs that allowed us to easily implement our custom asymmetric loss functions, which was a key stakeholder specification.
 
 Let us now use the final LGBM we found above to predict on the holdout/validation set.
 
@@ -1702,16 +1702,7 @@ Let us now use the final LGBM we found above to predict on the holdout/validatio
 deliveries_test = DeliveryTimeCalculator().transform(test_set)
 delivery_labels_test = deliveries_test['total_delivery_duration_seconds'].copy().to_numpy()
 deliveries_test_transformed = pipeline.transform(deliveries_test)
-```
 
-    Index(['subtotal', 'total_busy_dashers', 'total_outstanding_orders',
-           'estimated_store_to_consumer_driving_duration',
-           'outstanding_orders_per_dasher'],
-          dtype='object')
-
-
-
-```python
 # Fitting final model to train data
 final_lgbm.fit(deliveries_transformed, delivery_labels)
 ```
