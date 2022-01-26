@@ -8,7 +8,7 @@
 
 ## Introduction
 
-Food delivery services, especially through third-party applications, saw a dramatic growth in popularity in the 2010s, fueled by the widespread of availability of smartphones and mobile broadband. More recently, the pandemic also played a significant part in accelerating this trend: according to a report by [Yelp](https://restaurants.yelp.com/articles/dine-in-vs-takeout-trends/), 60% of Americans order takeout or delivery either directly or through a third-party service at least once a week. Moreover, nearly 1/3 of Americans rely on third-party apps to order at least twice a week. 
+Food delivery services, especially through third-party applications, saw a dramatic growth in popularity in the 2010s, fueled by the widespread availability of smartphones and mobile broadband. More recently, the pandemic also played a significant part in accelerating this trend: according to a report by [Yelp](https://restaurants.yelp.com/articles/dine-in-vs-takeout-trends/), 60% of Americans order takeout or delivery either directly or through a third-party service at least once a week. Moreover, nearly 1/3 of Americans rely on third-party apps to order at least twice a week. 
 
 The popularity of such applications and companies in the U.S. and around the world means that they are able to consistently amass large quantities of data on their customers, restaurant partners, drivers, and deliveries. This wealth of information makes this an industry where analytics and machine learning can provide significant competitive advantage in a number of ways. A key such use case is estimating total delivery duration - which, if done correctly, can provide benefits such as greater optimization of the courier network, as well as improved customer satisfaction.  
 
